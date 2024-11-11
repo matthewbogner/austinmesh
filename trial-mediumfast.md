@@ -18,7 +18,7 @@ The Austin mesh is not yet exceeding the 40% max channel utilization, and very i
 
 ## Guiding Principles
 
-1. ***Minimize disruption***: Do our best to not disturb our currently functioning mesh.  We have new nodes joining the mesh successfully on a regular basis, we should do our best to avoid creating a poor onboarding experience for our new friends.
+1. ***Minimize disruption***: Do our best to not disturb our currently functioning mesh.  We have new nodes joining the mesh successfully on a regular basis, and we should do our best to avoid creating a poor onboarding experience for our new friends.
 1. ***Data driven***: Collect copious quantities of data.  Let the data guide the experiment.  Any future decisions to switch frequencies and/or modem presets away from defaults will be met with justifiable skepticism - the data should be recorded durably so that it remains available in high fidelity for future mesh participants.
 1. ***Be open-minded***: Allow your previously held assumptions to be challenged.  This is a learning exercise, be patient.
 
@@ -27,7 +27,7 @@ The Austin mesh is not yet exceeding the 40% max channel utilization, and very i
 These steps are listed in order.
 
 1. Identify key nodes in the Austin area
-    - Recommend choosing the top X nodes with the highest air util% as reported to Bridger -- objectively, these are the nodes carrying the bulk of the traffic.
+    - Recommend choosing the top X nodes with the highest AirUtil % as reported to Bridger -- objectively, these are the nodes carrying the bulk of the traffic.
 1. Identify candidate frequency slots that will be on the short list for consideration
     - Maximize our ability to use existing spare hardware - stick as close to resonant antenna frequencies as possible
 1. Collect noise floor readings from various points in town using SDR for the candidate frequency slots
