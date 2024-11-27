@@ -32,7 +32,7 @@ These steps are listed in order.
     - Maximize our ability to use existing spare hardware - stick as close to resonant antenna frequencies as possible
 1. Collect noise floor readings from various points in town using SDR for the candidate frequency slots
     - Ensure that we collect measurements at the same locations as our key nodes identified above
-1. Based on noise floor and other interference measurements, choose the frequency slot for the test
+1. Based on [noise floor measurements](noise-floor-measurements/README.md) collected from strategic locations, choose the frequency slot for the test
 1. Agree upon a consistent firmware version that will be used for the duration of the test to minimize variables
     - In the real world, nodes will be on a variety of firmware versions, and we cannot reasonably control this variable.
 1. Set up ***new*** nodes on the new frequency slot, ***still using LongFast***.  
