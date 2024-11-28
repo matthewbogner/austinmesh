@@ -59,4 +59,11 @@ Note that the actual step (bin) size is calculated at runtime and is not exactly
 
 ## Analyze the Captured Data
 
-Coming shortly
+```sh
+mkvirtualenv -p `which python3` noise-floor
+pip install -U -r requirements.txt
+./analyze.py
+```
+
+## Results
+![MRBh Results](location/MRBh/MRBh-results.png)
