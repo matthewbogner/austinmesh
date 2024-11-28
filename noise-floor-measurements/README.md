@@ -28,7 +28,7 @@ cd location/<stationname>
 ../../measure.sh
 ```
 
-## Explanation
+### Explanation
 According to the [modem presets](https://meshtastic.org/docs/overview/radio-settings/#presets), the bandwidth for Medium Fast is 250 kHz.  We also know that the default slot 20 is ***centered*** on 906.875 MHz with the signal extending 125 kHz on both sides.
 
 To start, we'll capture the 3 slots above, below and including the default slot 20.  We'll capture readings from slot 20 as a form of a control, as we generally understand how busy that center frequency is supposed to be.
@@ -56,3 +56,7 @@ Explanation:
 * `output.csv` is the file where the results will be saved.
 
 Note that the actual step (bin) size is calculated at runtime and is not exactly as you specify it in the command above @ 250 kHz.  The example command above generates steps (bins) that are 125 kHz.  There's some logarithmic math involved in [the calculations](https://github.com/keenerd/rtl-sdr/blob/master/src/rtl_power.c) that make it rather challenging to coerce it to choose a value that exactly matches what was specified.  The end result, is that in order to ensure that we're associating measurements with the correct frequency, we'll analyze a single "slot" at a time, even though the `rtl_power` tool is capable of scanning continuous frequency ranges.  It is just easier to be confident in the results this way since we are choosing between concrete channels that are adjacent to each other.
+
+## Analyze the Captured Data
+
+Coming shortly
