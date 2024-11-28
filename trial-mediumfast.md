@@ -37,7 +37,9 @@ These steps are listed in order.
     - In the real world, nodes will be on a variety of firmware versions, and we cannot reasonably control this variable.
 1. Set up ***new*** nodes on the new frequency slot, ***still using LongFast***.  
     - Data should be reported to Bridger.
-    - TODO: Discuss with Andy if we can report data to a segregated MQTT topic path for independent visualization of the data for this test.
+    - Discuss with Andy if we can report data to a segregated MQTT topic path for independent visualization of the data for this test.
+        - For preset changes both the ServiceEnvelope `channel_id` and MQTT topic name change. This would allow us to filter metrics on `channel_id`. But it requires separate MQTT logins since those are tied to a specific topic per radio which has `LongFast` in the tpic name.
+        - For a frequency slot change we wouldn't have any way to distinguish those packets over MQTT as they don't appear to be sent as any parameter.
     - Make a point to utilize this parallel mesh as much as possible to properly gauge its health.
     - Run this parallel mesh with LongFast for at least a week.
 1. Switch the new nodes to MediumFast and let it run for at least a week.
